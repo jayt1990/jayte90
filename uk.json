@@ -4,7 +4,7 @@
     "parameters": {
         "adminUsername": {
             "type": "String",
-            "defaultValue": "vpsmoi",			
+            "defaultValue": "vps1412",			
             "metadata": {
                 "description": "Điền vào tên người dùng VPS."
             }
