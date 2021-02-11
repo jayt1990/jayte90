@@ -87,7 +87,9 @@
                 "name": "Standard_LRS"
             },
             "kind": "Storage",
-            "properties": {}
+            "properties": {
+        "supportsHttpsTrafficOnly": true
+      }
         },
         {
             "type": "Microsoft.Network/publicIPAddresses",
@@ -199,8 +201,9 @@
                     "osDisk": {
                         "createOption": "fromImage",
                         "managedDisk": {
-                            "storageAccountType": "Standard_LRS"
-                        }
+                            "storageAccountType": "Premium_LRS"
+                        },
+                        "diskSizeGB": 64
                     },
                     "imageReference": {
                         "publisher": "MicrosoftWindowsServer",
